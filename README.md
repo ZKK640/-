@@ -33,4 +33,16 @@ error: externally-managed-environment
 
 note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
 hint: See PEP 668 for the detailed specification.
+解决
 
+# 1. 安装虚拟环境工具
+sudo apt install python3-venv
+
+# 2. 创建虚拟环境
+python3 -m venv chess_env
+
+# 3. 激活虚拟环境
+source chess_env/bin/activate   # Windows 下是 chess_env\Scripts\activate
+
+# 4. 在虚拟环境里安装
+pip install pygame chess
